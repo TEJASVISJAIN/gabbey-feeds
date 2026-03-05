@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #004AAD;
+  --color-primary-dark: #003373;
+  --color-accent: #FFD700;
+  --color-accent-hover: #FFC107;
+  --color-bg-light: #F8FAFC;
+  --color-bg-dark: #0F172A;
+
+  --font-display: "Outfit", "system-ui", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-display);
+    @apply bg-bg-light text-slate-900 antialiased;
+  }
+}
+
+.hero-gradient {
+  background: linear-gradient(
+      rgba(0, 74, 173, 0.85),
+      rgba(0, 74, 173, 0.7)
+    ),
+    url("https://images.unsplash.com/photo-1547448415-e9f5b28e570d?q=80&w=2070&auto=format&fit=crop");
+  background-size: cover;
+  background-position: center;
+}
+
+.product-card:hover .product-img {
+  transform: scale(1.05);
+}
+
+.glass-effect {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.85);
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, #004aad 0%, #003373 100%);
+}
+
+@keyframes floating {
+  0% { transform: translate(0, 0px); }
+  50% { transform: translate(0, -15px); }
+  100% { transform: translate(0, 0px); }
+}
+
+.mascot-float {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
