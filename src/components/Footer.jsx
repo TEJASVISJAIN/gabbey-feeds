@@ -12,7 +12,7 @@ export default function Footer() {
               <img
                 src={logoUrl}
                 alt="Sabbey Feeds"
-                className="h-12 w-12 rounded-full border border-accent object-cover"
+                className="h-12 w-12 rounded-full  object-cover"
               />
               <span className="text-xl font-bold tracking-tight">
                 SABBEY <span className="text-accent">FEEDS</span>

@@ -81,7 +81,7 @@ export default function HomePage() {
 
             <div className="hidden md:flex justify-end">
               <div className="relative">
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-full blur opacity-25" />
+                <div className="absolute -inset-1  from-primary to-primary rounded-full blur opacity-25" />
                 <img
                   src={heroLogoUrl}
                   alt="Featured Cattle Logo"

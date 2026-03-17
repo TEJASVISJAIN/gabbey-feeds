@@ -192,4 +192,4 @@ export const contactInfo = {
 
 export const logoUrl = "/images/logoMain.png";
 
-export const heroLogoUrl = "/images/heroLogo.png";
+export const heroLogoUrl = "/images/logoMain.png";
