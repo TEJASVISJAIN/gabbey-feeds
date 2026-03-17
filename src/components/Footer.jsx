@@ -122,7 +122,7 @@ export default function Footer() {
 
         <div className="pt-10 border-t border-slate-800 text-center text-slate-500 text-sm">
           <p>
-            &copy; {new Date().getFullYear()} Sabbey Feeds Manufacturing Company. All Rights Reserved.
+            &copy; {new Date().getFullYear()} Sabbey Feeds. All Rights Reserved.
           </p>
         </div>
       </div>

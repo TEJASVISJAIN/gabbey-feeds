@@ -22,7 +22,7 @@ export default function Navbar() {
             <img
               src={logoUrl}
               alt="Sabbey Feeds Logo"
-              className="h-14 w-14 rounded-full border-2 border-accent object-cover"
+              className="h-14 w-14 rounded-full  object-cover"
             />
             <span className="text-2xl font-bold tracking-tight text-primary">
               SABBEY <span className="text-accent">FEEDS</span>

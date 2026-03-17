@@ -80,12 +80,12 @@ export default function HomePage() {
             </div>
 
             <div className="hidden md:flex justify-end">
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-full blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200" />
+              <div className="relative">
+                <div className="absolute -inset-1 bg-gradient-to-r from-accent to-primary rounded-full blur opacity-25" />
                 <img
                   src={heroLogoUrl}
                   alt="Featured Cattle Logo"
-                  className="relative w-80 h-80 lg:w-96 lg:h-96 rounded-full border-8 border-white shadow-2xl object-cover"
+                  className="relativeh-80 lg:w-96 lg:h-96  w-full h-full object-cover"
                 />
               </div>
             </div>
