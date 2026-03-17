@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { CheckCircle } from 'lucide-react';
 
 export default function ProductCard({ product, variant = 'home' }) {
@@ -84,7 +85,7 @@ export default function ProductCard({ product, variant = 'home' }) {
           <span className="bg-blue-50 text-primary text-[10px] font-bold px-2 py-1 rounded border border-primary/20">
             PROTEIN {product.protein}
           </span>
-          <span className="bg-yellow-50 text-orange-600 text-[10px] font-bold px-2 py-1 rounded border border-accent/20">
+          <span className="bg-green-50 text-green-700 text-[10px] font-bold px-2 py-1 rounded border border-green-200">
             FAT {product.fat}
           </span>
         </div>
@@ -100,9 +101,12 @@ export default function ProductCard({ product, variant = 'home' }) {
         </ul>
       </div>
 
-      <button className="w-full py-3 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-xl font-bold cursor-pointer">
+      <Link
+        to="/specs"
+        className="w-full py-3 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-xl font-bold cursor-pointer text-center block"
+      >
         View Specs
-      </button>
+      </Link>
     </div>
   );
 }

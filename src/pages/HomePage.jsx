@@ -117,7 +117,7 @@ export default function HomePage() {
       <section className="py-24 bg-bg-light">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Specialized Feeds</h2>
+            <h2 className="text-4xl font-bold mb-4">Our Product Range</h2>
             <div className="h-1.5 w-24 bg-primary mx-auto rounded-full" />
             <p className="mt-6 text-slate-600 max-w-2xl mx-auto text-lg">
               Tailored nutrition for every stage of your animal&apos;s lifecycle,

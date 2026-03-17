@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import ProductsPage from './pages/ProductsPage'
 import ReferencesPage from './pages/ReferencesPage'
 import ContactPage from './pages/ContactPage'
+import SpecsPage from './pages/SpecsPage'
 import ScrollToTop from './components/ScrollToTop'
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/products" element={<ProductsPage />} />
+          <Route path="/specs" element={<SpecsPage />} />
           <Route path="/references" element={<ReferencesPage />} />
           <Route path="/contact" element={<ContactPage />} />
         </Routes>

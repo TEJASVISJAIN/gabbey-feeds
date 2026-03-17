@@ -13,7 +13,7 @@ export const products = [
     description: "Ideal for calves 14 days to 4 months old. Promotes rumen growth and prevents diarrhea.",
     benefits: [
       "Growth of rumen",
-      "Avoids calf diarrhoea",
+      "Avoids calf diarrhea",
       "Helps growth of bones and muscles",
       "Contains vitamins, minerals & B-complex",
     ],
@@ -40,7 +40,7 @@ export const products = [
   {
     id: 3,
     name: "Heifer Feed",
-    type: "Pellet + Mash",
+    type: "Pellet & Mash",
     stage: "Maturing",
     stageColor: "bg-green-600",
     protein: "23%",
@@ -190,6 +190,6 @@ export const contactInfo = {
   address: "Ludhiana - Chandigarh Road, Ludhiana, Punjab, India",
 };
 
-export const logoUrl = "/images/logo.jpeg";
+export const logoUrl = "/images/logoMain.png";
 
-export const heroLogoUrl = "/images/logo.jpeg";
+export const heroLogoUrl = "/images/logoMain.png";

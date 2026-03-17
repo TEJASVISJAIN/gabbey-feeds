@@ -77,7 +77,7 @@ export default function Footer() {
             <ul className="space-y-4 text-slate-400 text-sm">
               <li>Calf Starter (Crumble)</li>
               <li>Transition Feed (Pellet)</li>
-              <li>Heifer Feed (Pellet + Mash)</li>
+              <li>Heifer Feed (Pellet & Mash)</li>
               <li>High Yielder Feed (10,000)</li>
               <li>Medium Yielder Feed (8,000)</li>
             </ul>
@@ -121,7 +121,9 @@ export default function Footer() {
         </div>
 
         <div className="pt-10 border-t border-slate-800 text-center text-slate-500 text-sm">
-          <p>&copy; {new Date().getFullYear()} Sabbey Feeds Manufacturing Co. All Rights Reserved.</p>
+          <p>
+            &copy; {new Date().getFullYear()} Sabbey Feeds Manufacturing Company. All Rights Reserved.
+          </p>
         </div>
       </div>
     </footer>
