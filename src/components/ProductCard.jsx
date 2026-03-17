@@ -23,8 +23,8 @@ export default function ProductCard({ product, variant = 'home' }) {
           </div>
         </div>
 
-        {/* Body */}
-        <div className="p-6 flex-grow">
+        {/* Body (summary + CTA) */}
+        <div className="p-6 flex flex-col gap-4 flex-grow">
           <div className="flex flex-col md:flex-row gap-6">
             <div className="w-full md:w-1/3 flex justify-center">
               <img
@@ -34,31 +34,35 @@ export default function ProductCard({ product, variant = 'home' }) {
               />
             </div>
             <div className="w-full md:w-2/3">
-              <div className="mb-4">
-                <span className="font-bold text-slate-900 text-sm uppercase">
-                  Recommended for:
+              <p className="text-slate-600 text-sm mb-3 line-clamp-3">
+                {product.description}
+              </p>
+              <div className="flex flex-wrap gap-2 text-xs">
+                <span className="inline-flex items-center px-2 py-1 rounded-full bg-blue-50 text-primary font-semibold">
+                  {product.stage}
                 </span>
-                <p className="text-slate-600">{product.recommended}</p>
-              </div>
-              <div className="mb-4">
-                <span className="font-bold text-slate-900 text-sm uppercase">
-                  Dosage:
+                <span className="inline-flex items-center px-2 py-1 rounded-full bg-slate-100 text-slate-700">
+                  Protein {product.protein}
                 </span>
-                <p className="text-slate-600 text-sm">{product.dosage}</p>
+                <span className="inline-flex items-center px-2 py-1 rounded-full bg-slate-100 text-slate-700">
+                  Fat {product.fat}
+                </span>
               </div>
             </div>
           </div>
 
-          <div className="mt-6">
-            <h5 className="font-bold text-slate-900 mb-2 flex items-center gap-1">
-              <CheckCircle className="w-4 h-4 text-primary" /> Benefits
-            </h5>
-            <ul className="text-sm text-slate-600 space-y-1">
-              {product.benefits.map((benefit, i) => (
-                <li key={i}>• {benefit}</li>
-              ))}
-            </ul>
+          <div className="mt-auto flex justify-between items-center pt-2">
+            <div className="text-xs text-slate-500">
+              Recommended for: <span className="font-semibold">{product.recommended}</span>
+            </div>
+            
           </div>
+          <Link
+        to={`/products/${product.id}`}
+        className="w-full py-3 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-xl font-bold cursor-pointer text-center block"
+      >
+        View Details
+      </Link>
         </div>
       </div>
     );
@@ -102,10 +106,10 @@ export default function ProductCard({ product, variant = 'home' }) {
       </div>
 
       <Link
-        to="/specs"
+        to={`/products/${product.id}`}
         className="w-full py-3 bg-slate-100 hover:bg-primary hover:text-white transition-all rounded-xl font-bold cursor-pointer text-center block"
       >
-        View Specs
+        View Details
       </Link>
     </div>
   );
