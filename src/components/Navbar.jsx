@@ -5,6 +5,7 @@ import { logoUrl } from '../data/products';
 
 const navLinks = [
   { name: 'Home', path: '/' },
+  { name: 'About Us', path: '/about' },
   { name: 'Products', path: '/products' },
   { name: 'References', path: '/references' },
 ];

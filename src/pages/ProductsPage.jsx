@@ -4,7 +4,7 @@ import ProductCard from '../components/ProductCard';
 import { products } from '../data/products';
 
 const galleryImages = [
-  { src: '/images/71a86a27.jpeg', alt: 'Farm' },
+  // { src: '/images/71a86a27.jpeg', alt: 'Farm' },
   { src: '/images/IMG_3756.jpeg', alt: 'Product' },
   { src: '/images/IMG_3757.jpeg', alt: 'Feed' },
 ];
